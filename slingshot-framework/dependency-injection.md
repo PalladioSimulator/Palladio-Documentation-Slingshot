@@ -3,7 +3,7 @@ layout: page
 parent: Slingshot Framework
 title: Dependency Injection Mechanism in Slingshot
 permalink: /slingshot-framework/dependency-injection/
-nav_order: 1
+nav_order: 5
 ---
 # Dependency Injection Mechanism in Slingshot
 To further loosen the coupling between the extensions and the (core) framework, and therefore improve extensibility, we use [Guice](https://github.com/google/guice), which is a

@@ -3,6 +3,7 @@ layout: page
 title: Slingshot Framework
 permalink: /slingshot-framework/
 has_children: true
+nav_order: 1
 ---
 # Slingshot Framework
 

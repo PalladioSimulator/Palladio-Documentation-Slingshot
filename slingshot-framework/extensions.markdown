@@ -3,7 +3,7 @@ layout: page
 parent: Slingshot Framework
 title: Making Extensions
 permalink: /slingshot-framework/extensions/
-nav_order: 1
+nav_order: 4
 ---
 # Making extensions and adding behavior
 The slingshot framework is based on the event-driven architecture. Almost all extensions are made by *listening to* and *publishing* events. This is done by utilizing the event driver.
