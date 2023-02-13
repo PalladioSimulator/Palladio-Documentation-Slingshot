@@ -47,7 +47,7 @@ The last section provides some screenshots.
   - all errors should now be gone.
 
 ### Hints 
-In case you encounter Errors, try one or all of these things in different orders:
+In case you encounter Errors, especially after switching workspaces, or closing and reopening Eclipse, try one or all of these things in different orders:
 - refresh workspace
 - *Set as active Target Platform*, respective *reload Target Platform* 
 - Clean and Build 
@@ -69,16 +69,16 @@ If neither of these options helps, you should probably start thinking.
 
 
 ## Screenshots
-### Workspace after importing Slingshot.
+### Workspace after importing Slingshot:
 <img src="../images/tutorial/workspace.png" alt="workspace"/>
 
-### Target Platform.
+### Target Platform:
 <img src="../images/tutorial/targetplatform.png" alt="targetplatform"/>
 
-### Run Configurations Dialog.
+### Run Configurations Dialog:
 <img src="../images/tutorial/runconfiguration.png" alt="runconfiguration"/>
 
-### Run Configurations Dialog with missing fields, e.g because the PCM-Core extension is not in the workspace.
+### Run Configurations Dialog with missing fields, e.g because the PCM-Core extension is not in the workspace:
 <img src="../images/tutorial/runconfiguration_missingFields.png" alt="runconfiguration—with—missing-fields"/>
 
 
