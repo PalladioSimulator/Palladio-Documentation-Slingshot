@@ -21,9 +21,10 @@ The last section provides some screenshots.
   * https://github.com/PalladioSimulator/Palladio-Analyzer-Slingshot
   * https://github.com/PalladioSimulator/Palladio-Analyzer-Slingshot-Extension-PCM-Core
   * https://github.com/PalladioSimulator/Palladio-Analyzer-Slingshot-Extension-Monitoring
+  * (optional) https://github.com/PalladioSimulator/Palladio-Analyzer-Slingshot-Extension-SPD-Interpreter
 
-- clone one of listed examples (optional):
-  * https://git.rss.iste.uni-stuttgart.de/slingshot/examples
+- (optional) get minimal example from GitHub:
+  * https://github.com/PalladioSimulator/Palladio-Documentation-Slingshot/examples/minimalexample
 
 ## Import 
 
@@ -46,6 +47,9 @@ The last section provides some screenshots.
   - pay attention to import nested projects as well.
   - all errors should now be gone.
 
+* (optional) import `Palladio-Analyzer-Slingshot-Extension-SPD-Interpreter`
+  - TODO
+
 ### Hints 
 In case you encounter Errors, especially after switching workspaces, or closing and reopening Eclipse, try one or all of these things in different orders:
 - refresh workspace
@@ -58,7 +62,9 @@ If neither of these options helps, you should probably start thinking.
 
 - start runtime eclipse (should not yield any popups with warnings, if it does, try to proceed. Maybe Slingshot runs anyway.)
 - open Palladio perspective.
-- import an example model, or create a new model.
+- get a model to simulate.
+  * *either* : create a new model.
+  * *or* : import an existing modelling project, e.g. the `minimalexample` listed above.
 - open the *Run Configurations* Dialog.
 - scroll down to *Slingshot Simlation* and create a new configuration.
 - select models in the *Architectural Models* Tab (similar to 'normal' Palladio) 
