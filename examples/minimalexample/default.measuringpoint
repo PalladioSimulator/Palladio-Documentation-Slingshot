@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.palladiosimulator.edp2.models:MeasuringPointRepository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.palladiosimulator.edp2.models="http://palladiosimulator.org/EDP2/MeasuringPoint/1.0" xmlns:pcmmeasuringpoint="http://palladiosimulator.org/PCM/MeasuringPoint/1.0" id="_sWN9AQ8kEe2YB_dTZQG_Mg">
+  <measuringPoints xsi:type="pcmmeasuringpoint:UsageScenarioMeasuringPoint" stringRepresentation="Usage Scenario: EspressoOrderingUsageScenario" resourceURIRepresentation="platform:/resource/minimalexample/default.usagemodel#_LPnI8CHdEd6lJo4DCALHMw">
+    <usageScenario href="default.usagemodel#_LPnI8CHdEd6lJo4DCALHMw"/>
+  </measuringPoints>
+  <measuringPoints xsi:type="pcmmeasuringpoint:UsageScenarioMeasuringPoint" stringRepresentation="Usage Scenario: OpenWorkloadEspressoScenario" resourceURIRepresentation="platform:/resource/minimalexample/openworkload.usagemodel#_kB1R8DWlEe2z0tGFo7y7Zw">
+    <usageScenario href="openworkload.usagemodel#_kB1R8DWlEe2z0tGFo7y7Zw"/>
+  </measuringPoints>
+</org.palladiosimulator.edp2.models:MeasuringPointRepository>
