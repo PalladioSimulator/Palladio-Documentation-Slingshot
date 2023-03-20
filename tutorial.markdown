@@ -18,13 +18,13 @@ The last section provides some screenshots.
   - for this tutorial, i used 2021-12
 - it's also possible to use a Palladio Bench instead of an Eclipse Modeling Edition. 
 - clone Slingshot repositories from GitHub:
-  * https://github.com/PalladioSimulator/Palladio-Analyzer-Slingshot
-  * https://github.com/PalladioSimulator/Palladio-Analyzer-Slingshot-Extension-PCM-Core
-  * https://github.com/PalladioSimulator/Palladio-Analyzer-Slingshot-Extension-Monitoring
-  * (optional) https://github.com/PalladioSimulator/Palladio-Analyzer-Slingshot-Extension-SPD-Interpreter
+  * [https://github.com/PalladioSimulator/Palladio-Analyzer-Slingshot](https://github.com/PalladioSimulator/Palladio-Analyzer-Slingshot)
+  * [https://github.com/PalladioSimulator/Palladio-Analyzer-Slingshot-Extension-PCM-Core](https://github.com/PalladioSimulator/Palladio-Analyzer-Slingshot-Extension-PCM-Core)
+  * [https://github.com/PalladioSimulator/Palladio-Analyzer-Slingshot-Extension-Monitoring](https://github.com/PalladioSimulator/Palladio-Analyzer-Slingshot-Extension-Monitoring)
+  * (optional) [https://github.com/PalladioSimulator/Palladio-Analyzer-Slingshot-Extension-SPD-Interpreter](https://github.com/PalladioSimulator/Palladio-Analyzer-Slingshot-Extension-SPD-Interpreter)
 
 - (optional) get minimal example from GitHub:
-  * https://github.com/PalladioSimulator/Palladio-Documentation-Slingshot/examples/minimalexample
+  * [https://github.com/PalladioSimulator/Palladio-Documentation-Slingshot/examples/minimalexample](https://github.com/PalladioSimulator/Palladio-Documentation-Slingshot/examples/minimalexample)
 
 ## Import 
 
