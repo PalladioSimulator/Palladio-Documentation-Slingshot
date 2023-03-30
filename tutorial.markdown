@@ -22,7 +22,7 @@ The last section provides some screenshots.
   * [https://github.com/PalladioSimulator/Palladio-Analyzer-Slingshot-Extension-PCM-Core](https://github.com/PalladioSimulator/Palladio-Analyzer-Slingshot-Extension-PCM-Core)
   * [https://github.com/PalladioSimulator/Palladio-Analyzer-Slingshot-Extension-Monitoring](https://github.com/PalladioSimulator/Palladio-Analyzer-Slingshot-Extension-Monitoring)
   * (optional) [https://github.com/PalladioSimulator/Palladio-Analyzer-Slingshot-Extension-SPD-Interpreter](https://github.com/PalladioSimulator/Palladio-Analyzer-Slingshot-Extension-SPD-Interpreter)
-  * (otional) [https://github.com/PalladioSimulator/Palladio-Addons-SPD-Metamodel](https://github.com/PalladioSimulator/Palladio-Addons-SPD-Metamodel)
+  * (optional) [https://github.com/PalladioSimulator/Palladio-Addons-SPD-Metamodel](https://github.com/PalladioSimulator/Palladio-Addons-SPD-Metamodel)
 
 - (optional) get minimal example from GitHub:
   * [https://github.com/PalladioSimulator/Palladio-Documentation-Slingshot/tree/master/examples/minimalexample](https://github.com/PalladioSimulator/Palladio-Documentation-Slingshot/tree/master/examples/minimalexample)
