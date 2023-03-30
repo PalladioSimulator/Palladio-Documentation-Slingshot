@@ -22,9 +22,10 @@ The last section provides some screenshots.
   * [https://github.com/PalladioSimulator/Palladio-Analyzer-Slingshot-Extension-PCM-Core](https://github.com/PalladioSimulator/Palladio-Analyzer-Slingshot-Extension-PCM-Core)
   * [https://github.com/PalladioSimulator/Palladio-Analyzer-Slingshot-Extension-Monitoring](https://github.com/PalladioSimulator/Palladio-Analyzer-Slingshot-Extension-Monitoring)
   * (optional) [https://github.com/PalladioSimulator/Palladio-Analyzer-Slingshot-Extension-SPD-Interpreter](https://github.com/PalladioSimulator/Palladio-Analyzer-Slingshot-Extension-SPD-Interpreter)
+  * (otional) [https://github.com/PalladioSimulator/Palladio-Addons-SPD-Metamodel](https://github.com/PalladioSimulator/Palladio-Addons-SPD-Metamodel)
 
 - (optional) get minimal example from GitHub:
-  * [https://github.com/PalladioSimulator/Palladio-Documentation-Slingshot/examples/minimalexample](https://github.com/PalladioSimulator/Palladio-Documentation-Slingshot/examples/minimalexample)
+  * [https://github.com/PalladioSimulator/Palladio-Documentation-Slingshot/tree/master/examples/minimalexample](https://github.com/PalladioSimulator/Palladio-Documentation-Slingshot/tree/master/examples/minimalexample)
 
 ## Import 
 
@@ -47,7 +48,12 @@ The last section provides some screenshots.
   - pay attention to import nested projects as well.
   - all errors should now be gone.
 
+* (optional) import `Palladio-Addons-SPD-Metamodel`
+  - provides the meta model for the SPD Language
+  - required, if you want to Slingshot's SPD-Interpreter extension (c.f. next bullet point) 
+
 * (optional) import `Palladio-Analyzer-Slingshot-Extension-SPD-Interpreter`
+  - requires `Palladio-Addons-SPD-Metamodel` to be imported
   - TODO
 
 ### Hints 
@@ -59,8 +65,10 @@ In case you encounter Errors, especially after switching workspaces, or closing 
 If neither of these options helps, you should probably start thinking. 
 
 ## Usage
-
-- start runtime eclipse (should not yield any popups with warnings, if it does, try to proceed. Maybe Slingshot runs anyway.)
+*prerequisite* : all desired extensions are imported into eclipse workspace. 
+- start runtime eclipse from within workspace.
+  * e.g. via *Run* -> *Run As* -> *Eclipse Application*
+  * should not yield any popups with warnings. If it does, try to proceed. Maybe Slingshot runs anyway.
 - open Palladio perspective.
 - get a model to simulate.
   * *either* : create a new model.
