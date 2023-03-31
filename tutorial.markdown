@@ -30,7 +30,9 @@ The last section provides some screenshots.
 ## Import 
 
 * import `Palladio-Analyzer-Slingshot`
-  - pay attention to import nested projects as well.
+  - pay attention to import nested projects as well. This is important, otherwise you Eclipse development workspace will not recognize the PlugIn projects.  
+    - *either* : in the import dialogue, tick the checkbox *Search for nested projects*.
+    - *or* : after importing, do a right-click on the project and select *Configure* -> *Configure and Detect Nested Projects...* and tick the checkbox *Search for nested projects* in the dialogue.
   - a pop up may suggest to install maven extension. This is optional. Slingshot runs, even if you ignore the popup.
   - open the *Problems* view. You should see some errors about bundles that cannot be resolved. Ignore these errors for now.
 
@@ -51,18 +53,20 @@ The last section provides some screenshots.
 * (optional) import `Palladio-Addons-SPD-Metamodel`
   - provides the meta model for the SPD Language
   - required, if you want to Slingshot's SPD-Interpreter extension (c.f. next bullet point) 
+  - if SPD yields error, try to regenerate.
 
 * (optional) import `Palladio-Analyzer-Slingshot-Extension-SPD-Interpreter`
   - requires `Palladio-Addons-SPD-Metamodel` to be imported
   - TODO
 
 ### Hints 
-In case you encounter Errors, especially after switching workspaces, or closing and reopening Eclipse, try one or all of these things in different orders:
-- refresh workspace
-- *Set as active Target Platform*, respective *reload Target Platform* 
+In case you encounter Errors, especially after switching workspaces, (re-) importing or opening / closing projects, try any or all of the following options in different orders:
+- close and reopen Eclipse
+- refresh workspace / projects 
 - Clean and Build 
+- *Set as active Target Platform*, respectively *reload Target Platform*
 
-If neither of these options helps, you should probably start thinking. 
+If neither of these options helps, you must probably do some proper thinking. 
 
 ## Usage
 *prerequisite* : all desired extensions are imported into eclipse workspace. 
