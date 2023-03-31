@@ -3,8 +3,6 @@ layout: page
 parent: Examples
 title: Minimal Example
 permalink: /examples/minimalExample/
-nav_order: 2
-has_children: true
 ---
 # MinimalExample
 
