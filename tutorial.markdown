@@ -2,6 +2,7 @@
 layout: page
 title: Tutorial
 permalink: /tutorial/
+nav_order: 9001
 ---
 
 # Tutorial

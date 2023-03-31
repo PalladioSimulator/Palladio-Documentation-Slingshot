@@ -1,3 +1,9 @@
+---
+layout: page
+parent: Examples
+title: Minimal Example
+permalink: /examples/minimalExample/
+---
 # MinimalExample
 
 Minimal might be a bit misleading. It used to be, though. 
