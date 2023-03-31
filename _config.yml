@@ -37,6 +37,10 @@ plugins:
 
 exclude:
   - examples/
+  
+include:
+  - examples/examples.md
+  - examples/minimalexample/README.md
 
 # Exclude from processing.
 # The following items will not be processed, by default.
