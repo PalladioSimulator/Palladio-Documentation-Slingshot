@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.palladiosimulator.analyzer.slingshot.ui.launchConfigurationType1">
-    <stringAttribute key="EDP2RepositoryID" value="_K1uX4Mb6Ee2r2LzXTxtdFg"/>
+    <stringAttribute key="EDP2RepositoryID" value="_bV0Y0LgiEe26Ga-db5S2vg"/>
     <stringAttribute key="accuracyQualityAnnotationFile" value=""/>
     <stringAttribute key="allocationModel" value="platform:/resource/minimalexample/procsharing.allocation"/>
     <booleanAttribute key="clear" value="true"/>
@@ -27,9 +27,10 @@
     <stringAttribute key="outpath" value="org.palladiosimulator.temporary"/>
     <stringAttribute key="persistenceFramework" value="Experiment Data Persistency &amp; Presentation (EDP2)"/>
     <booleanAttribute key="shouldThrowException" value="true"/>
-    <stringAttribute key="simTime" value="150"/>
+    <stringAttribute key="simTime" value="50"/>
     <booleanAttribute key="simulateAccuracy" value="false"/>
     <stringAttribute key="simulatorId" value="de.uka.ipd.sdq.codegen.simucontroller.simucom"/>
+    <stringAttribute key="spd" value="platform:/resource/minimalexample/scalingpolicies/empty.spd"/>
     <stringAttribute key="stepwidth" value=""/>
     <stringAttribute key="usagemodel" value="platform:/resource/minimalexample/default.usagemodel"/>
     <booleanAttribute key="useConfidenceStopCondition" value="false"/>

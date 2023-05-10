@@ -9,8 +9,8 @@
         <operationSignature__EntryLevelSystemCall href="default.repository#_KjhikgzkEeCFg86gxKwVPw"/>
       </actions_ScenarioBehaviour>
     </scenarioBehaviour_UsageScenario>
-    <workload_UsageScenario xsi:type="usagemodel:ClosedWorkload" population="5">
-      <thinkTime_ClosedWorkload specification="1.0"/>
+    <workload_UsageScenario xsi:type="usagemodel:ClosedWorkload" population="3">
+      <thinkTime_ClosedWorkload specification="DoublePDF[( 1.0 ; 0.6 ) ( 2.0 ; 0.2 ) ( 4.0 ; 0.2 )]"/>
     </workload_UsageScenario>
   </usageScenario_UsageModel>
 </usagemodel:UsageModel>
