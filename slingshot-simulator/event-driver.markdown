@@ -1,6 +1,6 @@
 ---
 layout: page
-parent: Slingshot Framework
+parent: Slingshot Simulator
 title: The Event-Driver Module
 permalink: /slingshot-simulator/event-driver/
 nav_order: 1

@@ -1,6 +1,6 @@
 ---
 layout: page
-parent: Slingshot Framework
+parent: Slingshot Simulator
 title: Making Extensions
 permalink: /slingshot-simulator/extensions/
 nav_order: 4

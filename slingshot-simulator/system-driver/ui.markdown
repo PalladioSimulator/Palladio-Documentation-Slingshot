@@ -1,6 +1,6 @@
 ---
 layout: page
-grand_parent: Slingshot Framework
+grand_parent: Slingshot Simulator
 parent: The System-Driver Module
 title: UI and Workflow
 permalink: /slingshot-simulator/system-driver/ui/

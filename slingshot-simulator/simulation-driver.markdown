@@ -1,6 +1,6 @@
 ---
 layout: page
-parent: Slingshot Framework
+parent: Slingshot Simulator
 title: The Simulation-Driver Module
 permalink: /slingshot-simulator/simulation-driver/
 nav_order: 3

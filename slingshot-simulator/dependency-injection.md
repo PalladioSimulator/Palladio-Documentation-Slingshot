@@ -1,6 +1,6 @@
 ---
 layout: page
-parent: Slingshot Framework
+parent: Slingshot Simulator
 title: Dependency Injection Mechanism in Slingshot
 permalink: /slingshot-simulator/dependency-injection/
 nav_order: 5
