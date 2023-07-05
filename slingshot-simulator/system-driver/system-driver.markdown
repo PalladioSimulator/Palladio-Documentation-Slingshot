@@ -2,7 +2,7 @@
 layout: page
 parent: Slingshot Framework
 title: The System-Driver Module
-permalink: /slingshot-framework/system-driver/
+permalink: /slingshot-simulator/system-driver/
 nav_order: 2
 has_children: true
 ---

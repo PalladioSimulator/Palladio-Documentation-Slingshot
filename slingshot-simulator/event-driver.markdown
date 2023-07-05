@@ -2,7 +2,7 @@
 layout: page
 parent: Slingshot Framework
 title: The Event-Driver Module
-permalink: /slingshot-framework/event-driver/
+permalink: /slingshot-simulator/event-driver/
 nav_order: 1
 ---
 # Event-Driver

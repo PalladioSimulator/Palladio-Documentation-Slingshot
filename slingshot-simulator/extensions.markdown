@@ -2,7 +2,7 @@
 layout: page
 parent: Slingshot Framework
 title: Making Extensions
-permalink: /slingshot-framework/extensions/
+permalink: /slingshot-simulator/extensions/
 nav_order: 4
 ---
 # Making extensions and adding behavior
@@ -50,4 +50,4 @@ public class SimulationBehavior implements SimulationBehaviorExtension {
 In this case, your class of subscribers should implement the `SystemBehaviorExtension`.
 
 ## Model Contribution
-See more at [UI and Workflow](Palladio-Documentation-Slingshot/slingshot-framework/system-driver/ui/)
+See more at [UI and Workflow](Palladio-Documentation-Slingshot/slingshot-simulator/system-driver/ui/)

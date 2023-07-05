@@ -3,7 +3,7 @@ layout: page
 grand_parent: Slingshot Framework
 parent: The System-Driver Module
 title: UI and Workflow
-permalink: /slingshot-framework/system-driver/ui/
+permalink: /slingshot-simulator/system-driver/ui/
 nav_order: 1
 ---
 # UI and Workflow
