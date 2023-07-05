@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Slingshot Framework
-permalink: /slingshot-framework/
+title: Slingshot Simulator
+permalink: /slingshot-simulator/
 has_children: true
 nav_order: 1
 ---
-# Slingshot Framework
+# Slingshot Simulator
 
 Slingshot itself consists of two parts, namely the **Framework** and the plugins. The framework serves as the base software onto which plugins can be made.
 The Slingshot framework is based on event-driven architecture, so mostly everything is handled in an event-driven way. In other words, plugins can add behavior to the overall system by listening to events and reacting to them.
