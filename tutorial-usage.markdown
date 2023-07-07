@@ -9,7 +9,7 @@ nav_order: 9001
 
 This tutorial explains how to use the Slingshot Simulator. 
 It focuses on a the perspective of the analyst.
-If you are interested in contributing or extending Slingshot, got to the [Developer Tutorial](/tutorial-dev/).
+If you are interested in contributing or extending Slingshot, go to the [Developer Tutorial](/tutorial-dev/).
 
 This Tutorial assumes a basic understanding of Eclipse Modeling Tools and their Usage.
 
