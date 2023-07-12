@@ -1,7 +1,7 @@
-<!-- ---
+---
 layout: page
 title: Constraints
 parent: SPD Language
-nav_order: 4
+nav_order: 3
 permalink: /constraints/
---- -->
+---

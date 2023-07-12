@@ -2,7 +2,7 @@
 layout: page
 title: Adjustments
 parent: SPD Language
-nav_order: 2
+nav_order: 3
 permalink: /adjustments/
 ---
 
