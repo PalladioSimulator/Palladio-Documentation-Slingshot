@@ -20,12 +20,12 @@ The following type of target groups are available for use: Elastic Infrastructur
 | [ServiceGroup](../docu/#deunistuttgartsqaslingshotspdtargetsServiceGroup) | The ServiceGroup denotes that the target group is the set of all elements of a service group i.e., service instances. | [TargetGroup](../docu/#deunistuttgartsqaslingshotspdtargetsTargetGroup) |
 | [CompetingQueueConsumers](../docu/#deunistuttgartsqaslingshotspdtargetsCompetingQueueConsumers) | The CompetingQueueConsumers denotes that the target group is the set of all elements of a competing queue consumers.  | [TargetGroup](../docu/#deunistuttgartsqaslingshotspdtargetsTargetGroup) |
 
-Since SPD relies on Palladio for simulating the behavior of the system uder a policy the target groups map to structures in the Palladio model.
+Since SPD relies on Palladio for simulating the behavior of the system under a policy the target groups map to structures in the Palladio model.
 The mapping is configured through an auxiliary model that is defined in the [SPD Semantic] which also defines the semantic of the SPD language.
 
 ## Elastic Infrastructure
 
-An Elastic Infrastructure target group gives to end-users the opportunity to model policies at the infrastructure level. 
+An Elastic Infrastructure target group gives end-users the opportunity to model policies at the infrastructure level. 
 This allows the architect to express policies that are usually provided by the cloud provider (e.g., auto-scaling groups in AWS).
 
 In Palladio, the Elastic Infrastructure target group maps to a subset of resource containers part of the `ResourceEnvironment` model element. 
@@ -35,19 +35,19 @@ One can imagine, that the resource containers labelled with `...Node2` and `...N
 
 When the elastic infrastructure is adjusted, other Palladio models are adjusted as well to reflect the changes in the resource environment (i.e., to make use of the newly created resource containers).
 The behavior is ultimately configured through the [SPD Semantic] auxiliary model, however, to the modeller creating the SPD it is transparent. 
-He can add policies, adjust triggers, constraints and other elements without additional effort.
+They can add policies, adjust triggers, constraints and other elements without additional effort.
 
 ## Service Group
 
-A Service Group target group gives to end-users the opportunity to model policies at the service level. 
-We define a service group in Palladio, a set of assembly contexts that are load balanced by a load balancer assembly context.
+A Service Group target group gives end-users the opportunity to model policies at the service level. 
+We define a service group in Palladio, as a set of assembly contexts that are load balanced by a load balancer assembly context.
 For example, in the following figure the service group is the highlighted set of assembly contexts. The load balancer is highlighted inside the service group.
 ![service-group.png](../images/service-group.png)
 
 Whenever an adjustment occurs, the service group is adjusted accordingly in the Palladio model. The following steps are performed: 
 1. A new assembly context is created for each new service instance and the new assemblies are connected correctly to the load balancer and to downstream components.
 2. The load balancer component is adjusted to distribute load to the new number of `AssemblyContexts`.
-3. The new assembly contexts are placed to the right resource containers by modifying the `Allocation` model. 
+3. The new assembly contexts are placed on the right resource containers by modifying the `Allocation` model.
 
 ## Competing Queue Consumers
 
