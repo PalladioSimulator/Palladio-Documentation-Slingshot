@@ -14,11 +14,11 @@ As stated previously, the way how the target group is adjusted is determined by 
 
 The following type of target groups are available for use: Elastic Infrastructure, Service Group, Competing Queue Consumers.
 
-| Name               | Description                                                                                                           | Supertype      |
-|--------------------|-----------------------------------------------------------------------------------------------------------------------|----------------|
-| [ElasticInfrastructure](../docu/#deunistuttgartsqaslingshotspdtargetsElasticInfrastructure) | The ElasticInfrastructure denotes that the target group is the set of all elements of the elastic infrastructure.     | [TargetGroup](../docu/#deunistuttgartsqaslingshotspdtargetsTargetGroup) |
-| [ServiceGroup](../docu/#deunistuttgartsqaslingshotspdtargetsServiceGroup) | The ServiceGroup denotes that the target group is the set of all elements of a service group i.e., service instances. | [TargetGroup](../docu/#deunistuttgartsqaslingshotspdtargetsTargetGroup) |
-| [CompetingQueueConsumers](../docu/#deunistuttgartsqaslingshotspdtargetsCompetingQueueConsumers) | The CompetingQueueConsumers denotes that the target group is the set of all elements of a competing queue consumers.  | [TargetGroup](../docu/#deunistuttgartsqaslingshotspdtargetsTargetGroup) |
+| Name                                                               | Description                                                                                                           | Supertype                                                               |
+|--------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
+| [ElasticInfrastructure](../docu/#targetsElasticInfrastructure)     | The ElasticInfrastructure denotes that the target group is the set of all elements of the elastic infrastructure.     | [TargetGroup](../docu/#targetsTargetGroup)                              |
+| [ServiceGroup](../docu/#targetsServiceGroup)                       | The ServiceGroup denotes that the target group is the set of all elements of a service group i.e., service instances. | [TargetGroup](../docu/#targetsTargetGroup)                              |
+| [CompetingQueueConsumers](../docu/#targetsCompetingConsumersGroup) | The CompetingQueueConsumers denotes that the target group is the set of all elements of a competing queue consumers.  | [TargetGroup](../docu/#targetsTargetGroup)                              |
 
 Since SPD relies on Palladio for simulating the behavior of the system under a policy the target groups map to structures in the Palladio model.
 The mapping is configured through an auxiliary model that is defined in the [SPD Semantic] which also defines the semantic of the SPD language.
