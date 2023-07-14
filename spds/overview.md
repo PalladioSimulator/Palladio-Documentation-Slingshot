@@ -10,17 +10,17 @@ permalink: /overview/
 # Scaling Policy
 <img src="../images/icons/scalingpolicy.png" alt="slingshot-scaling-policy"/>
 
-A [*Scaling Policy*](../docu/#deunistuttgartsqaslingshotspdScalingPolicy) determines the complete information for scaling a parituclar target. It is a containment of a [*trigger*](../docu/#deunistuttgartsqaslingshotspdtriggersScalingTrigger) and an [*adjustment type*](../docu/#deunistuttgartsqaslingshotspdadjustmentsAdjustmentType) and a finite number of [*constraints*](../docu/#deunistuttgartsqaslingshotspdconstraints). It references a [*target group*](../docu/#deunistuttgartsqaslingshotspdtargetsTargetGroup) which is adjusted when the trigger fires.
+A [*Scaling Policy*](../docu/#ScalingPolicy) determines the complete information for scaling a parituclar target. It is a containment of a [*trigger*](../docu/#triggersScalingTrigger) and an [*adjustment type*](../docu/#adjustmentsAdjustmentType) and a finite number of [*constraints*](../docu/#constraints). It references a [*target group*](../docu/#targetsTargetGroup) which is adjusted when the trigger fires.
 
 ## Trigger
 <img src="../images/icons/scalingtrigger_placeholder.png" alt="slingshot-scaling-trigger"/>
 
-A [*Scaling Trigger*](../docu/#deunistuttgartsqaslingshotspdtriggersScalingTrigger) encapsulates both what is observed on the modeled system (the monitoring) as well as how such observation lead to a trigger (the analysis part). 
+A [*Scaling Trigger*](../docu/#triggersScalingTrigger) encapsulates both what is observed on the modeled system (the monitoring) as well as how such observation lead to a trigger (the analysis part). 
 
 ## Constraints
 <img src="../images/icons/constraint_placeholder.png" alt="slingshot-scaling-trigger"/>
 
-[*Constraints*](../docu/#deunistuttgartsqaslingshotspdconstraintsAbstractConstraint) represents ways to constraint the scaling behavior. A typical example would be to constrain the number of adaptations for a time interval. In the SPD language we distinguish between two different types of constraints: constraints that are applicable to the policy, and, constraints that are applicable to the target group. An example for the later would be the maximum number of elements in the group (e.g., maximum number of Pods per Deployment in Kubernetes).
+[*Constraints*](../docu/#constraintsAbstractConstraint) represents ways to constraint the scaling behavior. A typical example would be to constrain the number of adaptations for a time interval. In the SPD language we distinguish between two different types of constraints: constraints that are applicable to the policy, and, constraints that are applicable to the target group. An example for the later would be the maximum number of elements in the group (e.g., maximum number of Pods per Deployment in Kubernetes).
 
 ### Policy Constraints
 ### Target Constraints
@@ -29,7 +29,7 @@ A [*Scaling Trigger*](../docu/#deunistuttgartsqaslingshotspdtriggersScalingTrigg
 ## Adjustment type
 <img src="../images/icons/adjustmenttype_placeholder.png" alt="slingshot-scaling-trigger"/>
 
-An *Adjustment Type* determines how the target group is adjusted. For example a [*Step Adjustment*](../docu/#deunistuttgartsqaslingshotspdadjustmentsStepAdjustment) denotes that the target group is adjusted by adding or removing a fixed amount of elements.
+An *Adjustment Type* determines how the target group is adjusted. For example a [*Step Adjustment*](../docu/#adjustmentsStepAdjustment) denotes that the target group is adjusted by adding or removing a fixed amount of elements.
 
 # Target Groups
 
