@@ -36,7 +36,7 @@ Cooldown constraints are applicable to the policy and help to allow the system t
 ### Interval Constraint
 An interval constraint is defined by a time offset and a time period in which the policy is switched to an inactive state.
 For the same example, the picture below defines a time offset of 2 time units and a time period of 5 time units.
-During the offset period, the policy is active and adjustments are made normally. After offset ends, the inactivity period as defined by the 
+During the offset period, the policy is active and adjustments are made normally. After offset ends, the inactivity period as defined by the value of the interval parameter.
 
 ![example-interval.png](..%2Fimages%2Fconstraints%2Fexample-interval.png)
 
