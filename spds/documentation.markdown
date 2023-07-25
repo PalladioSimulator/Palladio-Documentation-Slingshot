@@ -6,9 +6,9 @@ nav_order: 4
 permalink: /docu/
 ---
 <!-- This file was created using the HTML documentation generator. -->
-<!-- Creation date: Mon Jul 24 12:02:44 CEST 2023-->
+<!-- Creation date: Tue Jul 25 10:18:12 CEST 2023-->
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
+	<head>
       	<title>Metamodel Documentation (platform:/resource/org.palladiosimulator.spd/model/SPD.ecore)</title>
     	<script type="text/javascript">
 //<![CDATA[				    	
@@ -116,7 +116,6 @@ height: 500px;
 display: block; /* Show it on hover */
 }
 td {
-
 }
 .page{
 display:table-row;
@@ -812,7 +811,7 @@ Contrary to the IntervalConstraint, the CooldownConstraint determines the future
 	<th><div class="columnHeader">Properties</div></th>
 	<th><div class="columnHeader">Documentation</div></th>
 </tr>
-<tr>	<td><div id="constraintspolicyIntervalConstraint.intervallDuration" class="teletype">intervallDuration</div>
+<tr>	<td><div id="constraintspolicyIntervalConstraint.intervalDuration" class="teletype">intervalDuration</div>
 	</td>
 	<td><div class="keyValue"><span class="label">T: </span><span class="teletype">EDouble</span></div>
 <div class="label">Cardinality: [1..1]</div>
@@ -823,6 +822,13 @@ Contrary to the IntervalConstraint, the CooldownConstraint determines the future
 	<td><div class="keyValue"><span class="label">T: </span><span class="teletype">EDouble</span></div>
 <div class="label">Cardinality: [1..1]</div>
  </td> <td><p>The offset determines a period of time from which the interval constraint should begin. </p>
+</td>
+		</tr><tr>	<td><div id="constraintspolicyIntervalConstraint.repeat" class="teletype">repeat</div>
+	</td>
+	<td><div class="keyValue"><span class="label">T: </span><span class="teletype">EBoolean</span></div>
+<div class="label">Cardinality: [0..1]</div>
+<div class="keyValue"><span class="label">Default: </span><span class="teletype">false</span></div>
+ </td> <td><p>The repeat property determines whether the interval constraint should repeat throughout the simulation or is applied once, which is the default case (false).</p>
 </td>
 		</tr></table>
 <a href="#constraints.policy.IntervalConstraint.attr"></a>

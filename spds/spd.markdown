@@ -23,5 +23,3 @@ The SPD language is based on the [Eclipse Modeling Framework](https://www.eclips
 The documentation of the meta-model is available [here](../docu/).
 
 ![SPD Language Overview](../images/spd-overview.png)
-
-![service-group.png](..%2Fimages%2Fservice-group.png)
