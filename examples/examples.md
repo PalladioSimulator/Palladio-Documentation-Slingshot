@@ -3,7 +3,7 @@ layout: page
 title: Examples
 permalink: /examples/
 has_children: true
-nav_order: 9002
+nav_order: 5
 ---
 # Examples
 
