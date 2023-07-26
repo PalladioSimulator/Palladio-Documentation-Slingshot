@@ -7,10 +7,10 @@ permalink: /constraints/
 ---
 # Constraints
 
-In SPD constraints restrict and alter the final behaviour of a policy. Constraints aid the modeller in 
+In SPD, constraints restrict and alter the final behaviour of a policy. Constraints aid the modeller in 
 defining and analyzing policies that are more robust and less prone to oscillations.
 There are two types of constraints: temporal constraints and state based constraints. Furthermore, some constraints 
-are applicable for [ScalingPolicies](../docu/#spdScalingPolicy) and some for [TargetGroups](../docu/#targetsTargetGroup).
+are applicable to [ScalingPolicies](../docu/#spdScalingPolicy) and some to [TargetGroups](../docu/#targetsTargetGroup).
 
 ## Temporal Constraints
  
@@ -20,7 +20,8 @@ One temporal constraint, that is applicable to the whole target group, is the [T
 
 ### Cooldown Constraint
 
-To exemplify the cooldown constraint, consider the image below which shows the behavior of a policy without a cooldown constraint.
+To exemplify the cooldown constraint, consider the image below. 
+It shows the behavior of a policy without a cooldown constraint.
 
 ![example-constraint.png](..%2Fimages%2Fconstraints%2Fexample-constraint.png)
 
