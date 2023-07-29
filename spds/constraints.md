@@ -35,7 +35,7 @@ In case the max number of scaling operations is set to 1, after the first adjust
 Cooldown constraints are applicable to the policy and help to allow the system to stabilize after another adjustment is made so that the effects are better observable.
 
 ### Interval Constraint
-An interval constraint is defined by a time offset and a time period in which the policy is switched to an inactive state.
+An interval constraint is defined by a time offset and a time period in which the policy is disregarded.
 For the same example, the picture below defines a time offset of 2 time units and a time period of 5 time units.
 During the offset period, the policy is active and adjustments are made normally. 
 After offset ends, the inactivity period starts that lasts for the specified _intervalDuration_.
