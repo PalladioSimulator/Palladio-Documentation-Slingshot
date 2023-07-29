@@ -3,7 +3,7 @@ layout: page
 title: Slingshot Simulator
 permalink: /slingshot-simulator/
 has_children: true
-nav_order: 10
+nav_order: 2
 ---
 # Slingshot Simulator
 

@@ -2,7 +2,7 @@
 layout: page
 title: Developer Tutorial
 permalink: /tutorial-dev/
-nav_order: 60
+nav_order: 4
 ---
 
 # Developer Tutorial

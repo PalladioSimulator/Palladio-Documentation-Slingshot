@@ -2,7 +2,7 @@
 layout: page
 title: Usage Tutorial
 permalink: /tutorial-usage/
-nav_order: 50
+nav_order: 3
 ---
 
 # Usage Tutorial
