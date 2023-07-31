@@ -14,7 +14,7 @@ are applicable to [ScalingPolicies](../docu/#spdScalingPolicy) and some to [Targ
 
 ## Temporal Constraints
  
-Temporal constraints are constraints in which the restriction and behavior alternation considers time as the main input source. 
+Temporal constraints are constraints in which the restriction and behavior alteration considers time as the main input source. 
 Two temporal constraints, which are applicable to a policy, are the [Interval Constraint](../docu/#constraintspolicyIntervalConstraint) and the [Cooldown Constraint](../docu/#constraintspolicyCooldownConstraint).
 One temporal constraint, that is applicable to the whole target group, is the [Thrashing Constraint](../docu/#constraintstargetThrashingConstraint).
 
@@ -63,7 +63,7 @@ When adding a Thrashing constraint, the modeler can avoid such an oscillation. T
 
 ## State Based Constraints
 
-State based constraints are constraints in which the restriction and behavior alternation considers the model state during the simulation.
+State based constraints are constraints in which the restriction and behavior alteration considers the model state during the simulation.
 At the moment there is only one state based constraint available, the [TargetGroup Size Constraint](../docu/#constraintstargetTargetGroupSizeConstraint).
 
 ### TargetGroup Size Constraint
