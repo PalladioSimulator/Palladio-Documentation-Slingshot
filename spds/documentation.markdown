@@ -6,7 +6,7 @@ nav_order: 4
 permalink: /docu/
 ---
 <!-- This file was created using the HTML documentation generator. -->
-<!-- Creation date: Fri Jul 14 11:58:46 CEST 2023-->
+<!-- Creation date: Tue Jul 25 10:18:12 CEST 2023-->
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
       	<title>Metamodel Documentation (platform:/resource/org.palladiosimulator.spd/model/SPD.ecore)</title>
@@ -202,7 +202,7 @@ text-indent:14pt;
 <td> </td>
 		</tr><tr>	<td><div id="spdScalingPolicy.policyConstraints" class="teletype">policyConstraints</div>
 	</td>
-	<td><div class="keyValue"><span class="label">T: </span><span class="teletype"><a href="#policyPolicyConstraint">PolicyConstraint</a></span></div>
+	<td><div class="keyValue"><span class="label">T: </span><span class="teletype"><a href="#constraintspolicyPolicyConstraint">PolicyConstraint</a></span></div>
 <div class="label">Cardinality: [0..*]</div>
 <div class="label">Containment</div>
 </td> 
@@ -282,7 +282,7 @@ text-indent:14pt;
 </tr>
 <tr>	<td><div id="targetsTargetGroup.targetConstraints" class="teletype">targetConstraints</div>
 	</td>
-	<td><div class="keyValue"><span class="label">T: </span><span class="teletype"><a href="#targetTargetConstraint">TargetConstraint</a></span></div>
+	<td><div class="keyValue"><span class="label">T: </span><span class="teletype"><a href="#constraintstargetTargetConstraint">TargetConstraint</a></span></div>
 <div class="label">Cardinality: [0..*]</div>
 <div class="label">Containment</div>
 </td> 
@@ -464,14 +464,14 @@ The minAdjustmentValue determines the minimal change of the current capacity.</p
 </tr>
 <tr>	<td><div id="triggersBaseTrigger.expectedValue" class="teletype">expectedValue</div>
 	</td>
-	<td><div class="keyValue"><span class="label">T: </span><span class="teletype"><a href="#triggersexpectationsExpectedValue">ExpectedValue</a></span></div>
+	<td><div class="keyValue"><span class="label">T: </span><span class="teletype"><a href="#expectationsExpectedValue">ExpectedValue</a></span></div>
 <div class="label">Cardinality: [1..1]</div>
 <div class="label">Containment</div>
 </td> 
 <td> </td>
 		</tr><tr>	<td><div id="triggersBaseTrigger.stimulus" class="teletype">stimulus</div>
 	</td>
-	<td><div class="keyValue"><span class="label">T: </span><span class="teletype"><a href="#triggersstimuliStimulus">Stimulus</a></span></div>
+	<td><div class="keyValue"><span class="label">T: </span><span class="teletype"><a href="#stimuliStimulus">Stimulus</a></span></div>
 <div class="label">Cardinality: [1..1]</div>
 <div class="label">Containment</div>
 </td> 
@@ -767,18 +767,17 @@ The minAdjustmentValue determines the minimal change of the current capacity.</p
 </tr>
 </table>
 <a href="#triggers.TrendPattern.lit"></a>
-<h1 id="policy"><a href="#policy"><span class="packageName">spd.constraints.policy</span> package</a></h1>
+<h1 id="constraintspolicy"><a href="#constraintspolicy"><span class="packageName">spd.constraints.policy</span> package</a></h1>
 
-<p>The policy subpackage encapsulates constraints that are applicable to the scope of a policy. </p>
 <div class="">EPackage properties:</div>
-<div class="keyValue"><span class="label">Namespace Prefix: </span><span class="teletype">policy</span></div>
+<div class="keyValue"><span class="label">Namespace Prefix: </span><span class="teletype">constraints.policy</span></div>
 <div class="keyValue"><span class="label">Namespace URI: </span><span class="teletype">http://palladiosimulator.org/ScalingPolicyDefinition/Constraints/Policy/1.0</span></div>
-<h2 id="policyCooldownConstraint"><a href="#policyCooldownConstraint"><a href="#policyCooldownConstraint">CooldownConstraint</a></a></h2>
+<h2 id="constraintspolicyCooldownConstraint"><a href="#constraintspolicyCooldownConstraint"><a href="#constraintspolicyCooldownConstraint">CooldownConstraint</a></a></h2>
 
 <p>The CoolDown constraint defines a quiescence period in which the target group is not enacted by the policy. 
 In addition one can specify the maximum number of scaling operations that can occur in the defined quiescence period. 
 Contrary to the IntervalConstraint, the CooldownConstraint determines the future enactment of the policy after an adjustment has happened.</p>
-<h4><b>Supertype:</b><a href="#constraintsTemporalConstraint">TemporalConstraint</a></h4><table>
+<h4><b>Supertypes:</b><a href="#constraintspolicyPolicyConstraint">PolicyConstraint</a>, <a href="#constraintsTemporalConstraint">TemporalConstraint</a></h4><table>
 <tr>
 	<th colspan="3"><div class="tableHeader">Attributes</div></th>
 </tr>
@@ -787,22 +786,23 @@ Contrary to the IntervalConstraint, the CooldownConstraint determines the future
 	<th><div class="columnHeader">Properties</div></th>
 	<th><div class="columnHeader">Documentation</div></th>
 </tr>
-<tr>	<td><div id="policyCooldownConstraint.cooldownTime" class="teletype">cooldownTime</div>
+<tr>	<td><div id="constraintspolicyCooldownConstraint.cooldownTime" class="teletype">cooldownTime</div>
 	</td>
 	<td><div class="keyValue"><span class="label">T: </span><span class="teletype">EDouble</span></div>
 <div class="label">Cardinality: [1..1]</div>
  </td> <td></td>
-		</tr><tr>	<td><div id="policyCooldownConstraint.maxScalingOperations" class="teletype">maxScalingOperations</div>
+		</tr><tr>	<td><div id="constraintspolicyCooldownConstraint.maxScalingOperations" class="teletype">maxScalingOperations</div>
 	</td>
 	<td><div class="keyValue"><span class="label">T: </span><span class="teletype">EInt</span></div>
 <div class="label">Cardinality: [1..1]</div>
+<div class="keyValue"><span class="label">Default: </span><span class="teletype">0</span></div>
  </td> <td></td>
 		</tr></table>
-<a href="#policy.CooldownConstraint.attr"></a>
-<h2 id="policyIntervallConstraint"><a href="#policyIntervallConstraint"><a href="#policyIntervallConstraint">IntervallConstraint</a></a></h2>
+<a href="#constraints.policy.CooldownConstraint.attr"></a>
+<h2 id="constraintspolicyIntervalConstraint"><a href="#constraintspolicyIntervalConstraint"><a href="#constraintspolicyIntervalConstraint">IntervalConstraint</a></a></h2>
 
 <p>The IntervalConstraint identifies fixed intervals in which a policy enacts adjustments. Contrary to the CooldownConstraint, the IntervalConstraint predefines the enactment of the policy in time. </p>
-<h4><b>Supertypes:</b><a href="#policyPolicyConstraint">PolicyConstraint</a>, <a href="#constraintsTemporalConstraint">TemporalConstraint</a></h4><table>
+<h4><b>Supertypes:</b><a href="#constraintspolicyPolicyConstraint">PolicyConstraint</a>, <a href="#constraintsTemporalConstraint">TemporalConstraint</a></h4><table>
 <tr>
 	<th colspan="3"><div class="tableHeader">Attributes</div></th>
 </tr>
@@ -811,32 +811,39 @@ Contrary to the IntervalConstraint, the CooldownConstraint determines the future
 	<th><div class="columnHeader">Properties</div></th>
 	<th><div class="columnHeader">Documentation</div></th>
 </tr>
-<tr>	<td><div id="policyIntervallConstraint.intervallDuration" class="teletype">intervallDuration</div>
+<tr>	<td><div id="constraintspolicyIntervalConstraint.intervalDuration" class="teletype">intervalDuration</div>
 	</td>
-	<td><div class="keyValue"><span class="label">T: </span><span class="teletype">EInt</span></div>
+	<td><div class="keyValue"><span class="label">T: </span><span class="teletype">EDouble</span></div>
 <div class="label">Cardinality: [1..1]</div>
  </td> <td><p>The duration in which no enactment by the policy occurs. </p>
 </td>
-		</tr><tr>	<td><div id="policyIntervallConstraint.offset" class="teletype">offset</div>
+		</tr><tr>	<td><div id="constraintspolicyIntervalConstraint.offset" class="teletype">offset</div>
 	</td>
-	<td><div class="keyValue"><span class="label">T: </span><span class="teletype">EInt</span></div>
+	<td><div class="keyValue"><span class="label">T: </span><span class="teletype">EDouble</span></div>
 <div class="label">Cardinality: [1..1]</div>
  </td> <td><p>The offset determines a period of time from which the interval constraint should begin. </p>
 </td>
+		</tr><tr>	<td><div id="constraintspolicyIntervalConstraint.repeat" class="teletype">repeat</div>
+	</td>
+	<td><div class="keyValue"><span class="label">T: </span><span class="teletype">EBoolean</span></div>
+<div class="label">Cardinality: [0..1]</div>
+<div class="keyValue"><span class="label">Default: </span><span class="teletype">false</span></div>
+ </td> <td><p>The repeat property determines whether the interval constraint should repeat throughout the simulation or is applied once, which is the default case (false).</p>
+</td>
 		</tr></table>
-<a href="#policy.IntervallConstraint.attr"></a>
-<h2 id="policyPolicyConstraint"><a href="#policyPolicyConstraint"><a href="#policyPolicyConstraint">PolicyConstraint</a></a></h2>
+<a href="#constraints.policy.IntervalConstraint.attr"></a>
+<h2 id="constraintspolicyPolicyConstraint"><a href="#constraintspolicyPolicyConstraint"><a href="#constraintspolicyPolicyConstraint">PolicyConstraint</a></a></h2>
 
-<div class="eclassProps">EClass properties:<div class="eclassPropList"><span class="label">Abstract</span></div></div><h4><b>Supertype:</b><a href="#constraintsAbstractConstraint">AbstractConstraint</a></h4><h1 id="target"><a href="#target"><span class="packageName">spd.constraints.target</span> package</a></h1>
+<div class="eclassProps">EClass properties:<div class="eclassPropList"><span class="label">Abstract</span></div></div><h4><b>Supertype:</b><a href="#constraintsAbstractConstraint">AbstractConstraint</a></h4><h1 id="constraintstarget"><a href="#constraintstarget"><span class="packageName">spd.constraints.target</span> package</a></h1>
 
 <div class="">EPackage properties:</div>
-<div class="keyValue"><span class="label">Namespace Prefix: </span><span class="teletype">target</span></div>
+<div class="keyValue"><span class="label">Namespace Prefix: </span><span class="teletype">constraints.target</span></div>
 <div class="keyValue"><span class="label">Namespace URI: </span><span class="teletype">http://palladiosimulator.org/ScalingPolicyDefinition/Constraints/Target/1.0</span></div>
-<h2 id="targetTargetConstraint"><a href="#targetTargetConstraint"><a href="#targetTargetConstraint">TargetConstraint</a></a></h2>
+<h2 id="constraintstargetTargetConstraint"><a href="#constraintstargetTargetConstraint"><a href="#constraintstargetTargetConstraint">TargetConstraint</a></a></h2>
 
-<div class="eclassProps">EClass properties:<div class="eclassPropList"><span class="label">Abstract</span></div></div><h4><b>Supertype:</b><a href="#constraintsAbstractConstraint">AbstractConstraint</a></h4><h2 id="targetTargetGroupSizeConstraint"><a href="#targetTargetGroupSizeConstraint"><a href="#targetTargetGroupSizeConstraint">TargetGroupSizeConstraint</a></a></h2>
+<div class="eclassProps">EClass properties:<div class="eclassPropList"><span class="label">Abstract</span></div></div><h4><b>Supertype:</b><a href="#constraintsAbstractConstraint">AbstractConstraint</a></h4><h2 id="constraintstargetTargetGroupSizeConstraint"><a href="#constraintstargetTargetGroupSizeConstraint"><a href="#constraintstargetTargetGroupSizeConstraint">TargetGroupSizeConstraint</a></a></h2>
 
-<h4><b>Supertypes:</b><a href="#constraintsStateBasedContraint">StateBasedContraint</a>, <a href="#targetTargetConstraint">TargetConstraint</a></h4><table>
+<h4><b>Supertypes:</b><a href="#constraintsStateBasedContraint">StateBasedContraint</a>, <a href="#constraintstargetTargetConstraint">TargetConstraint</a></h4><table>
 <tr>
 	<th colspan="3"><div class="tableHeader">Attributes</div></th>
 </tr>
@@ -845,22 +852,22 @@ Contrary to the IntervalConstraint, the CooldownConstraint determines the future
 	<th><div class="columnHeader">Properties</div></th>
 	<th><div class="columnHeader">Documentation</div></th>
 </tr>
-<tr>	<td><div id="targetTargetGroupSizeConstraint.maxSize" class="teletype">maxSize</div>
+<tr>	<td><div id="constraintstargetTargetGroupSizeConstraint.maxSize" class="teletype">maxSize</div>
 	</td>
 	<td><div class="keyValue"><span class="label">T: </span><span class="teletype">EInt</span></div>
 <div class="label">Cardinality: [1..1]</div>
  </td> <td></td>
-		</tr><tr>	<td><div id="targetTargetGroupSizeConstraint.minSize" class="teletype">minSize</div>
+		</tr><tr>	<td><div id="constraintstargetTargetGroupSizeConstraint.minSize" class="teletype">minSize</div>
 	</td>
 	<td><div class="keyValue"><span class="label">T: </span><span class="teletype">EInt</span></div>
 <div class="label">Cardinality: [1..1]</div>
  </td> <td></td>
 		</tr></table>
-<a href="#target.TargetGroupSizeConstraint.attr"></a>
-<h2 id="targetThrashingConstraint"><a href="#targetThrashingConstraint"><a href="#targetThrashingConstraint">ThrashingConstraint</a></a></h2>
+<a href="#constraints.target.TargetGroupSizeConstraint.attr"></a>
+<h2 id="constraintstargetThrashingConstraint"><a href="#constraintstargetThrashingConstraint"><a href="#constraintstargetThrashingConstraint">ThrashingConstraint</a></a></h2>
 
 <p>Thrashing constraint is used to constraint the thrashing of resources i.e. increase and decrease of resources. The constraint is defined by the minimum amount of time where no two decicions with adjustments in two oposite directions can occur. </p>
-<h4><b>Supertypes:</b><a href="#targetTargetConstraint">TargetConstraint</a>, <a href="#constraintsTemporalConstraint">TemporalConstraint</a></h4><table>
+<h4><b>Supertypes:</b><a href="#constraintstargetTargetConstraint">TargetConstraint</a>, <a href="#constraintsTemporalConstraint">TemporalConstraint</a></h4><table>
 <tr>
 	<th colspan="3"><div class="tableHeader">Attributes</div></th>
 </tr>
@@ -869,214 +876,14 @@ Contrary to the IntervalConstraint, the CooldownConstraint determines the future
 	<th><div class="columnHeader">Properties</div></th>
 	<th><div class="columnHeader">Documentation</div></th>
 </tr>
-<tr>	<td><div id="targetThrashingConstraint.minimumTimeNoThrashing" class="teletype">minimumTimeNoThrashing</div>
+<tr>	<td><div id="constraintstargetThrashingConstraint.minimumTimeNoThrashing" class="teletype">minimumTimeNoThrashing</div>
 	</td>
 	<td><div class="keyValue"><span class="label">T: </span><span class="teletype">EDouble</span></div>
 <div class="label">Cardinality: [0..1]</div>
  </td> <td></td>
 		</tr></table>
-<a href="#target.ThrashingConstraint.attr"></a>
-<h1 id="triggersstimuli"><a href="#triggersstimuli"><span class="packageName">spd.triggers.stimuli</span> package</a></h1>
-
-<div class="">EPackage properties:</div>
-<div class="keyValue"><span class="label">Namespace Prefix: </span><span class="teletype">triggers.stimuli</span></div>
-<div class="keyValue"><span class="label">Namespace URI: </span><span class="teletype">http://palladiosimulator.org/ScalingPolicyDefinition/Triggers/Stimuli/1.0</span></div>
-<h2 id="triggersstimuliCPUUtilization"><a href="#triggersstimuliCPUUtilization"><a href="#triggersstimuliCPUUtilization">CPUUtilization</a></a></h2>
-
-<p>A resource utilization based stimulus based on the CPU resource.</p>
-<h4><b>Supertype:</b><a href="#triggersstimuliResourceUtilizationStimulus">ResourceUtilizationStimulus</a></h4><h2 id="triggersstimuliHDDUtilization"><a href="#triggersstimuliHDDUtilization"><a href="#triggersstimuliHDDUtilization">HDDUtilization</a></a></h2>
-
-<p>A resource utilization based stimulus based on the HDD resource.</p>
-<h4><b>Supertype:</b><a href="#triggersstimuliResourceUtilizationStimulus">ResourceUtilizationStimulus</a></h4><table>
-<tr>
-	<th colspan="3"><div class="tableHeader">Attributes</div></th>
-</tr>
-<tr>
-	<th><div class="columnHeader">Name</div></th>
-	<th><div class="columnHeader">Properties</div></th>
-	<th><div class="columnHeader">Documentation</div></th>
-</tr>
-<tr>	<td><div id="triggersstimuliHDDUtilization.usageType" class="teletype">usageType</div>
-	</td>
-	<td><div class="keyValue"><span class="label">T: </span><span class="teletype"><a href="#triggersHDDUSAGETYPE">HDDUSAGETYPE</a></span></div>
-<div class="label">Cardinality: [0..1]</div>
- </td> <td></td>
-		</tr></table>
-<a href="#triggers.stimuli.HDDUtilization.attr"></a>
-<h2 id="triggersstimuliManagedElementsStateStimulus"><a href="#triggersstimuliManagedElementsStateStimulus"><a href="#triggersstimuliManagedElementsStateStimulus">ManagedElementsStateStimulus</a></a></h2>
-
-<p>The ManagedElementsStateStiumlus classifies the stimuli that has the source in the managed elements. A ManagedElementsStateStimulus has to specify how the aggregation across elements is performed.</p>
-<div class="eclassProps">EClass properties:<div class="eclassPropList"><span class="label">Abstract</span></div></div><h4><b>Supertype:</b><a href="#triggersstimuliTargetGroupStateStimulus">TargetGroupStateStimulus</a></h4><table>
-<tr>
-	<th colspan="3"><div class="tableHeader">Attributes</div></th>
-</tr>
-<tr>
-	<th><div class="columnHeader">Name</div></th>
-	<th><div class="columnHeader">Properties</div></th>
-	<th><div class="columnHeader">Documentation</div></th>
-</tr>
-<tr>	<td><div id="triggersstimuliManagedElementsStateStimulus.aggregationOverElements" class="teletype">aggregationOverElements</div>
-	</td>
-	<td><div class="keyValue"><span class="label">T: </span><span class="teletype"><a href="#triggersAGGREGATIONMETHOD">AGGREGATIONMETHOD</a></span></div>
-<div class="label">Cardinality: [0..1]</div>
- </td> <td><p>The aggregation accross different resource containers in the Target Group. For example if two containers C1 and C2 have a resource utilizaiton of 0.6, respectively 0.8, then choosing AVERAGE as an aggreagtion method then it determines that the value of 0.7 should be compared against the threshold value. </p>
-</td>
-		</tr></table>
-<a href="#triggers.stimuli.ManagedElementsStateStimulus.attr"></a>
-<h2 id="triggersstimuliMemoryUtilization"><a href="#triggersstimuliMemoryUtilization"><a href="#triggersstimuliMemoryUtilization">MemoryUtilization</a></a></h2>
-
-<p>A resource utilization based stimulus based on the memory resource.</p>
-<h4><b>Supertype:</b><a href="#triggersstimuliResourceUtilizationStimulus">ResourceUtilizationStimulus</a></h4><h2 id="triggersstimuliNetworkUtilization"><a href="#triggersstimuliNetworkUtilization"><a href="#triggersstimuliNetworkUtilization">NetworkUtilization</a></a></h2>
-
-<p>If the link has been modelled with a certain capacity, then the NetworkUtilization of a certain type determines the fraction of that capacity that is being used by the elements of the target group. </p>
-<h4><b>Supertype:</b><a href="#triggersstimuliResourceUtilizationStimulus">ResourceUtilizationStimulus</a></h4><table>
-<tr>
-	<th colspan="3"><div class="tableHeader">Attributes</div></th>
-</tr>
-<tr>
-	<th><div class="columnHeader">Name</div></th>
-	<th><div class="columnHeader">Properties</div></th>
-	<th><div class="columnHeader">Documentation</div></th>
-</tr>
-<tr>	<td><div id="triggersstimuliNetworkUtilization.usageType" class="teletype">usageType</div>
-	</td>
-	<td><div class="keyValue"><span class="label">T: </span><span class="teletype"><a href="#triggersNETWORKUSAGETYPE">NETWORKUSAGETYPE</a></span></div>
-<div class="label">Cardinality: [0..1]</div>
- </td> <td><p>The type of network usage.</p>
-</td>
-		</tr></table>
-<a href="#triggers.stimuli.NetworkUtilization.attr"></a>
-<h2 id="triggersstimuliNumberOfElements"><a href="#triggersstimuliNumberOfElements"><a href="#triggersstimuliNumberOfElements">NumberOfElements</a></a></h2>
-
-<p>The NumberOfElements is a concrete stimulus that represents the number of elements in the target group. </p>
-<h4><b>Supertype:</b><a href="#triggersstimuliTargetGroupStateStimulus">TargetGroupStateStimulus</a></h4><h2 id="triggersstimuliOperationResponseTime"><a href="#triggersstimuliOperationResponseTime"><a href="#triggersstimuliOperationResponseTime">OperationResponseTime</a></a></h2>
-
-<p>A stimulus based on the response time of a given operation. It requires specifying the operationSignature.</p>
-<h4><b>Supertype:</b><a href="#triggersstimuliSourceInterfaceStimulus">SourceInterfaceStimulus</a></h4><table>
-<tr>
-	<th colspan="3"><div class="tableHeader">References</div></th>
-</tr>
-<tr>
-	<th><div class="columnHeader">Name</div></th>
-	<th><div class="columnHeader">Properties</div></th>
-	<th><div class="columnHeader">Documentation</div></th>
-</tr>
-<tr>	<td><div id="triggersstimuliOperationResponseTime.operationSignature" class="teletype">operationSignature</div>
-	</td>
-	<td><div class="keyValue"><span class="label">T: </span><span class="teletype"><a href="#repositoryOperationSignature">OperationSignature</a></span></div>
-<div class="label">Cardinality: [0..1]</div>
-</td> 
-<td> <p>The operation from which the response time is used. </p>
-</td>
-		</tr></table>
-<a href="#triggers.stimuli.OperationResponseTime.ref"></a>
-<h2 id="triggersstimuliQueueLength"><a href="#triggersstimuliQueueLength"><a href="#triggersstimuliQueueLength">QueueLength</a></a></h2>
-
-<p>A queue length based stimulus from the source of the target group. A precondition is that the target group is of type CompetingConsumers. </p>
-<h4><b>Supertype:</b><a href="#triggersstimuliSourceInterfaceStimulus">SourceInterfaceStimulus</a></h4><h2 id="triggersstimuliResourceUtilizationStimulus"><a href="#triggersstimuliResourceUtilizationStimulus"><a href="#triggersstimuliResourceUtilizationStimulus">ResourceUtilizationStimulus</a></a></h2>
-
-<div class="eclassProps">EClass properties:<div class="eclassPropList"><span class="label">Abstract</span></div></div><h4><b>Supertype:</b><a href="#triggersstimuliManagedElementsStateStimulus">ManagedElementsStateStimulus</a></h4><h2 id="triggersstimuliSimulationStateStimulus"><a href="#triggersstimuliSimulationStateStimulus"><a href="#triggersstimuliSimulationStateStimulus">SimulationStateStimulus</a></a></h2>
-
-<p>The SimulationStateStimulus classifies all stimuli that has the source from the simulation state. A direct subclass is for example the SimulationTime stimulus. </p>
-<div class="eclassProps">EClass properties:<div class="eclassPropList"><span class="label">Abstract</span></div></div><h4><b>Supertype:</b><a href="#triggersstimuliStimulus">Stimulus</a></h4><h2 id="triggersstimuliSimulationTime"><a href="#triggersstimuliSimulationTime"><a href="#triggersstimuliSimulationTime">SimulationTime</a></a></h2>
-
-<p>A stimulus based on the simulation time.</p>
-<h4><b>Supertype:</b><a href="#triggersstimuliSimulationStateStimulus">SimulationStateStimulus</a></h4><h2 id="triggersstimuliSourceInterfaceStimulus"><a href="#triggersstimuliSourceInterfaceStimulus"><a href="#triggersstimuliSourceInterfaceStimulus">SourceInterfaceStimulus</a></a></h2>
-
-<p>The SourceInterfaceStimulus encapsulates all stimuli that is comming from the source of the target group. For example, in case of a load balanced service then the operation response time is a stimulus that</p>
-<div class="eclassProps">EClass properties:<div class="eclassPropList"><span class="label">Abstract</span></div></div><h4><b>Supertype:</b><a href="#triggersstimuliStimulus">Stimulus</a></h4><h2 id="triggersstimuliStimulus"><a href="#triggersstimuliStimulus"><a href="#triggersstimuliStimulus">Stimulus</a></a></h2>
-
-<p>The Stimulus defines observable information during the simulation of an architectural model upon which a trigger can fire. Each Stimulus </p>
-<div class="eclassProps">EClass properties:<div class="eclassPropList"><span class="label">Abstract</span></div></div><h2 id="triggersstimuliTargetGroupStateStimulus"><a href="#triggersstimuliTargetGroupStateStimulus"><a href="#triggersstimuliTargetGroupStateStimulus">TargetGroupStateStimulus</a></a></h2>
-
-<p>The TargetGroupStateStimulus classifies all stimuli that has the source from the elements that are being adjusted by the policy. </p>
-<div class="eclassProps">EClass properties:<div class="eclassPropList"><span class="label">Abstract</span></div></div><h4><b>Supertype:</b><a href="#triggersstimuliStimulus">Stimulus</a></h4><h2 id="triggersstimuliTaskCount"><a href="#triggersstimuliTaskCount"><a href="#triggersstimuliTaskCount">TaskCount</a></a></h2>
-
-<p>The TaskCount stimulus is a concrete stimulus that represents the number of tasks that are currently being processed by the managed elements.</p>
-<h4><b>Supertype:</b><a href="#triggersstimuliManagedElementsStateStimulus">ManagedElementsStateStimulus</a></h4><h1 id="triggersexpectations"><a href="#triggersexpectations"><span class="packageName">spd.triggers.expectations</span> package</a></h1>
-
-<div class="">EPackage properties:</div>
-<div class="keyValue"><span class="label">Namespace Prefix: </span><span class="teletype">triggers.expectations</span></div>
-<div class="keyValue"><span class="label">Namespace URI: </span><span class="teletype">http://palladiosimulator.org/ScalingPolicyDefinition/Triggers/Expectations/1.0</span></div>
-<h2 id="triggersexpectationsExpectedCount"><a href="#triggersexpectationsExpectedCount"><a href="#triggersexpectationsExpectedCount">ExpectedCount</a></a></h2>
-
-<h4><b>Supertype:</b><a href="#triggersexpectationsExpectedPrimitive">ExpectedPrimitive</a></h4><table>
-<tr>
-	<th colspan="3"><div class="tableHeader">Attributes</div></th>
-</tr>
-<tr>
-	<th><div class="columnHeader">Name</div></th>
-	<th><div class="columnHeader">Properties</div></th>
-	<th><div class="columnHeader">Documentation</div></th>
-</tr>
-<tr>	<td><div id="triggersexpectationsExpectedCount.count" class="teletype">count</div>
-	</td>
-	<td><div class="keyValue"><span class="label">T: </span><span class="teletype">EInt</span></div>
-<div class="label">Cardinality: [0..1]</div>
- </td> <td></td>
-		</tr></table>
-<a href="#triggers.expectations.ExpectedCount.attr"></a>
-<h2 id="triggersexpectationsExpectedPercentage"><a href="#triggersexpectationsExpectedPercentage"><a href="#triggersexpectationsExpectedPercentage">ExpectedPercentage</a></a></h2>
-
-<h4><b>Supertype:</b><a href="#triggersexpectationsExpectedPrimitive">ExpectedPrimitive</a></h4><table>
-<tr>
-	<th colspan="3"><div class="tableHeader">Attributes</div></th>
-</tr>
-<tr>
-	<th><div class="columnHeader">Name</div></th>
-	<th><div class="columnHeader">Properties</div></th>
-	<th><div class="columnHeader">Documentation</div></th>
-</tr>
-<tr>	<td><div id="triggersexpectationsExpectedPercentage.value" class="teletype">value</div>
-	</td>
-	<td><div class="keyValue"><span class="label">T: </span><span class="teletype">EDouble</span></div>
-<div class="label">Cardinality: [0..1]</div>
- </td> <td></td>
-		</tr></table>
-<a href="#triggers.expectations.ExpectedPercentage.attr"></a>
-<h2 id="triggersexpectationsExpectedPrimitive"><a href="#triggersexpectationsExpectedPrimitive"><a href="#triggersexpectationsExpectedPrimitive">ExpectedPrimitive</a></a></h2>
-
-<p>There are three different primitives in the context of triggers: percentages, time, and count.</p>
-<div class="eclassProps">EClass properties:<div class="eclassPropList"><span class="label">Abstract</span></div></div><h4><b>Supertype:</b><a href="#triggersexpectationsExpectedValue">ExpectedValue</a></h4><h2 id="triggersexpectationsExpectedTime"><a href="#triggersexpectationsExpectedTime"><a href="#triggersexpectationsExpectedTime">ExpectedTime</a></a></h2>
-
-<h4><b>Supertype:</b><a href="#triggersexpectationsExpectedPrimitive">ExpectedPrimitive</a></h4><table>
-<tr>
-	<th colspan="3"><div class="tableHeader">Attributes</div></th>
-</tr>
-<tr>
-	<th><div class="columnHeader">Name</div></th>
-	<th><div class="columnHeader">Properties</div></th>
-	<th><div class="columnHeader">Documentation</div></th>
-</tr>
-<tr>	<td><div id="triggersexpectationsExpectedTime.value" class="teletype">value</div>
-	</td>
-	<td><div class="keyValue"><span class="label">T: </span><span class="teletype">EDouble</span></div>
-<div class="label">Cardinality: [0..1]</div>
- </td> <td></td>
-		</tr></table>
-<a href="#triggers.expectations.ExpectedTime.attr"></a>
-<h2 id="triggersexpectationsExpectedTrend"><a href="#triggersexpectationsExpectedTrend"><a href="#triggersexpectationsExpectedTrend">ExpectedTrend</a></a></h2>
-
-<h4><b>Supertype:</b><a href="#triggersexpectationsExpectedValue">ExpectedValue</a></h4><table>
-<tr>
-	<th colspan="3"><div class="tableHeader">Attributes</div></th>
-</tr>
-<tr>
-	<th><div class="columnHeader">Name</div></th>
-	<th><div class="columnHeader">Properties</div></th>
-	<th><div class="columnHeader">Documentation</div></th>
-</tr>
-<tr>	<td><div id="triggersexpectationsExpectedTrend.trend" class="teletype">trend</div>
-	</td>
-	<td><div class="keyValue"><span class="label">T: </span><span class="teletype"><a href="#triggersTrendPattern">TrendPattern</a></span></div>
-<div class="label">Cardinality: [0..1]</div>
- </td> <td></td>
-		</tr></table>
-<a href="#triggers.expectations.ExpectedTrend.attr"></a>
-<h2 id="triggersexpectationsExpectedValue"><a href="#triggersexpectationsExpectedValue"><a href="#triggersexpectationsExpectedValue">ExpectedValue</a></a></h2>
-
-<div class="eclassProps">EClass properties:<div class="eclassPropList"><span class="label">Abstract</span></div></div><h2 id="triggersexpectationsNoExpectation"><a href="#triggersexpectationsNoExpectation"><a href="#triggersexpectationsNoExpectation">NoExpectation</a></a></h2>
-
-<h4><b>Supertype:</b><a href="#triggersexpectationsExpectedValue">ExpectedValue</a></h4></body>
+<a href="#constraints.target.ThrashingConstraint.attr"></a>
+</body>
 </html>
+
 
