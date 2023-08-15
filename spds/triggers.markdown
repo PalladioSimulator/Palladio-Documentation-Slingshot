@@ -30,7 +30,7 @@ the SimpleFireOnValue trigger.
 ### SimulationTime (SimulationStateStimulus)
 
 With the SimulationTime stimulus, the modeller can define a trigger that fires based on the simulation time. For example, one can define scenarios
-where the system scales up after 100 seconds of simulation time. 
+where the system scales out after 20 seconds of simulation time. 
 
 <details>
   <summary>Example</summary>
@@ -45,7 +45,7 @@ An example with a SimpleFireOnValue trigger that fires when the simulation time 
 
 The OperationResponseTime is an example of a stimulus obtained from the SourceInterface of the target group. 
 This particular stimulus is based on the response time of an operation. For example, one can define a trigger that fires when the response time of an operation is 
-above 100ms.
+above 200ms.
 
 <details>
   <summary>Example</summary>
@@ -57,7 +57,7 @@ An example with a SimpleFireOnValue trigger that fires when the response time of
 </details>
 
 
-### CPUUtilization (ResourceUtilizationState --|> ManagedElementsState --|> TargetGroupState)
+### CPUUtilization (ResourceUtilizationState ➝ ManagedElementsState ➝ TargetGroupState)
 
 The CPUUtilization is an example of a stimulus obtained from the ResourceUtilizationState of the target group. The ManagedElementsState requires 
 from the modeller to specify a statistical aggregation across the managed elements (e.g., Max, Average, Min). For example, in the case of the CPUUtilization,
