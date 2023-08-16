@@ -59,7 +59,7 @@ An example with a SimpleFireOnValue trigger that fires when the response time of
 </details>
 
 
-### CPUUtilization (ResourceUtilizationState ➝ ManagedElementsState ➝ TargetGroupState)
+### CPUUtilization (ResourceUtilizationState ➝ ManagedElementsStateStimulus ➝ TargetGroupStateStimulus)
 
 The CPUUtilization is an example of a stimulus obtained from the ResourceUtilizationState of the target group. The ManagedElementsState requires 
 from the modeller to specify a statistical aggregation across the managed elements (e.g., Max, Average, Min). For example, in the case of the CPUUtilization,
@@ -75,7 +75,7 @@ this means that the reported CPU utilization of each managed element is aggregat
 </details>
 
 
-### NumberOfElements (TargetGroupState)
+### NumberOfElements (TargetGroupStateStimulus)
 
 The NumberOfElements is a simple stimulus that yields information from the target group state, in particular the number of elements in the target group.
 For example, one can define a trigger that fires when the number of elements in the target group is above 10. This can be used to create policies that
