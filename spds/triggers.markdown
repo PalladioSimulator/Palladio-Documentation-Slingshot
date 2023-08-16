@@ -23,7 +23,9 @@ The following figure shows the class diagram of the trigger hierarchy.
 ## Common Stimulus and Expectations: Examples for SimpleFireOnValue
 
 The Stimulus defines observable information during the simulation of an architectural model upon which a trigger can fire. 
-There exist a variety of stimuli that can be used to define triggers. Please check the [Stimuli](../docu/#triggersStimulus) section for more information.
+There exist a variety of stimuli that can be used to define triggers. 
+
+[//]: # (Please check the [Stimuli]&#40;../docu/#triggersStimulus&#41; section for more information.)
 Here we cover a set of common stimuli that are used in the context of elasticity and a set of common expectations that are used to define policies that use 
 the SimpleFireOnValue trigger.
 
