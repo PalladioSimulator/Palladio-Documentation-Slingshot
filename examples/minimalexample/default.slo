@@ -1,2 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<slo:ServiceLevelObjectiveRepository xmlns:slo="http://palladiosimulator.org/ServiceLevelObjective/1.0"/>
+<slo:ServiceLevelObjectiveRepository xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:slo="http://palladiosimulator.org/ServiceLevelObjective/1.0">
+  <servicelevelobjectives id="_Z25iQNIuEe6MeK0MwQYDSA" name="TestSLO" description="TestSLO">
+    <lowerThreshold xsi:type="slo:HardThreshold" id="_aMEhANIuEe6MeK0MwQYDSA" thresholdLimit="2"/>
+    <upperThreshold xsi:type="slo:HardThreshold" id="_f6MhddIuEe6MeK0MwQYDSA" thresholdLimit="4.5"/>
+    <measurementSpecification href="default.monitorrepository#_eXCdUPZkEe6FGO05oNDXkA"/>
+  </servicelevelobjectives>
+  <servicelevelobjectives id="_vzoOZv4XEe6LNqFFDVWKbg" name="AR FeedThrough" description="TestSLO2">
+    <lowerThreshold xsi:type="slo:HardThreshold" id="_60mBcP4XEe6LNqFFDVWKbg" thresholdLimit="0"/>
+    <upperThreshold xsi:type="slo:HardThreshold" id="_0fPo9f4XEe6LNqFFDVWKbg" thresholdLimit="100"/>
+    <measurementSpecification href="default.monitorrepository#_19PUAMApEe68fP6DY67yOg"/>
+  </servicelevelobjectives>
+</slo:ServiceLevelObjectiveRepository>

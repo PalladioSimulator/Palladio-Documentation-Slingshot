@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExperimentAutomation.Experiments:ExperimentRepository xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ExperimentAutomation.Experiments="http://palladiosimulator.org/ExperimentAutomation/Experiments/1.0" xmlns:ExperimentAutomation.Experiments.AbstractSimulation="http://palladiosimulator.org/ExperimentAutomation/AbstractSimulation/1.0" xmlns:stateexplorationtooladapter="http://palladiosimulator.org/ExperimentAutomation/ToolAdapter/StateExploration/1.0">
+  <experiments id="1" name="test-experiment" description="test-experiment-description">
+    <toolConfiguration xsi:type="stateexplorationtooladapter:StateExplorationConfiguration" name="TestConfiguration" minStateDuration="10.0" maxIterations="5" modeLocation="/Users/stiesssh/tmp/mentor">
+      <datasource xsi:type="ExperimentAutomation.Experiments.AbstractSimulation:MemoryDatasource"/>
+    </toolConfiguration>
+    <stopConditions xsi:type="ExperimentAutomation.Experiments.AbstractSimulation:SimTimeStopCondition" simulationTime="10"/>
+    <initialModel>
+      <usageModel href="default.usagemodel#/"/>
+      <allocation href="default.allocation#_JiPBICHdEd6lJo4DCALHMw"/>
+      <monitorRepository href="default.monitorrepository#_JVaWoLwZEe6i2ICnm9lfkw"/>
+      <serviceLevelObjectives href="default.slo#/"/>
+      <repository href="default.repository#_dqFLECHbEd6tG9VclJz3cw"/>
+      <system href="default.system#_84D0kCHcEd6lJo4DCALHMw"/>
+      <resourceEnvironment href="My.resourceenvironment#/0"/>
+      <scalingDefinitions href="default.spd#_PKdecLwZEe6i2ICnm9lfkw"/>
+      <spdSemanticConfiguration href="default.semanticspd#/"/>
+    </initialModel>
+  </experiments>
+</ExperimentAutomation.Experiments:ExperimentRepository>

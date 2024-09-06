@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<semanticspd:Configuration xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:semanticspd="http://palladiosimulator.org/ScalingPolicyDefinitionSemantic/1.0">
+  <spd href="default.spd#_PKdecLwZEe6i2ICnm9lfkw"/>
+  <targetCfgs xsi:type="semanticspd:ElasticInfrastructureCfg">
+    <unit href="My.resourceenvironment#_GAeeUCpXEeKNWc2UWjbmuw"/>
+    <elements href="My.resourceenvironment#_GAeeUCpXEeKNWc2UWjbmuw"/>
+    <linkingResource href="My.resourceenvironment#_jW8l4LwZEe6i2ICnm9lfkw"/>
+    <resourceEnvironment href="My.resourceenvironment#/0"/>
+  </targetCfgs>
+  <targetCfgs xsi:type="semanticspd:ServiceGroupCfg">
+    <unit href="default.system#_9c3KwCHcEd6lJo4DCALHMw"/>
+    <elements href="default.system#_9c3KwCHcEd6lJo4DCALHMw"/>
+    <loadBalancingAssembly href="default.system#_zHLRgLwmEe6cUu5aSZDYJA"/>
+  </targetCfgs>
+  <allocation href="default.allocation#_JiPBICHdEd6lJo4DCALHMw"/>
+  <system href="default.system#_84D0kCHcEd6lJo4DCALHMw"/>
+  <resourceEnvironment href="My.resourceenvironment#/0"/>
+  <repository href="default.repository#_dqFLECHbEd6tG9VclJz3cw"/>
+</semanticspd:Configuration>

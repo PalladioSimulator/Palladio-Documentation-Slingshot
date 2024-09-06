@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<org.palladiosimulator.edp2.models:MeasuringPointRepository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.palladiosimulator.edp2.models="http://palladiosimulator.org/EDP2/MeasuringPoint/1.0" xmlns:pcmmeasuringpoint="http://palladiosimulator.org/PCM/MeasuringPoint/1.0" id="_sWN9AQ8kEe2YB_dTZQG_Mg">
-  <measuringPoints xsi:type="pcmmeasuringpoint:UsageScenarioMeasuringPoint" stringRepresentation="Usage Scenario: EspressoOrderingUsageScenario" resourceURIRepresentation="platform:/resource/minimalexample/default.usagemodel#_LPnI8CHdEd6lJo4DCALHMw">
+<org.palladiosimulator.edp2.models:MeasuringPointRepository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.palladiosimulator.edp2.models="http://palladiosimulator.org/EDP2/MeasuringPoint/1.0" xmlns:pcmmeasuringpoint="http://palladiosimulator.org/PCM/MeasuringPoint/1.0" xmlns:repository="http://palladiosimulator.org/PalladioComponentModel/Repository/5.2" id="_DnVZgLwZEe6i2ICnm9lfkw">
+  <measuringPoints xsi:type="pcmmeasuringpoint:ActiveResourceMeasuringPoint" stringRepresentation="CPU [0] in AppServer" resourceURIRepresentation="platform:/resource/minimalexample/My.resourceenvironment#_KFRwgCpXEeKNWc2UWjbmuw">
+    <activeResource href="My.resourceenvironment#_KFRwgCpXEeKNWc2UWjbmuw"/>
+  </measuringPoints>
+  <measuringPoints xsi:type="pcmmeasuringpoint:ResourceContainerMeasuringPoint" stringRepresentation="Resource Container AppServer [_GAeeUCpXEeKNWc2UWjbmuw]" resourceURIRepresentation="platform:/resource/minimalexample/My.resourceenvironment#_GAeeUCpXEeKNWc2UWjbmuw">
+    <resourceContainer href="My.resourceenvironment#_GAeeUCpXEeKNWc2UWjbmuw"/>
+  </measuringPoints>
+  <measuringPoints xsi:type="pcmmeasuringpoint:ResourceContainerMeasuringPoint" stringRepresentation="Resource Container Loadbalancer_RC [_R8hGoLwqEe6VP9cIU1FUYw]" resourceURIRepresentation="platform:/resource/minimalexample/My.resourceenvironment#_R8hGoLwqEe6VP9cIU1FUYw">
+    <resourceContainer href="My.resourceenvironment#_R8hGoLwqEe6VP9cIU1FUYw"/>
+  </measuringPoints>
+  <measuringPoints xsi:type="pcmmeasuringpoint:UsageScenarioMeasuringPoint" stringRepresentation="Usage Scenario: ClosedWorkloadUsageScenario" resourceURIRepresentation="platform:/resource/minimalexample/default.usagemodel#_LPnI8CHdEd6lJo4DCALHMw">
     <usageScenario href="default.usagemodel#_LPnI8CHdEd6lJo4DCALHMw"/>
   </measuringPoints>
-  <measuringPoints xsi:type="pcmmeasuringpoint:UsageScenarioMeasuringPoint" stringRepresentation="Usage Scenario: OpenWorkloadEspressoScenario" resourceURIRepresentation="platform:/resource/minimalexample/openworkload.usagemodel#_kB1R8DWlEe2z0tGFo7y7Zw">
-    <usageScenario href="openworkload.usagemodel#_kB1R8DWlEe2z0tGFo7y7Zw"/>
+  <measuringPoints xsi:type="pcmmeasuringpoint:AssemblyOperationMeasuringPoint" stringRepresentation="Operation: Assembly_LoadBalancer.Provided_Accounting.chargeForEspresso" resourceURIRepresentation="platform:/resource/minimalexample/default.repository#_KjhikgzkEeCFg86gxKwVPw">
+    <role xsi:type="repository:OperationProvidedRole" href="default.system#_-r1fUCHcEd6lJo4DCALHMw"/>
+    <operationSignature href="default.repository#_KjhikgzkEeCFg86gxKwVPw"/>
+    <assembly href="default.system#_zHLRgLwmEe6cUu5aSZDYJA"/>
   </measuringPoints>
 </org.palladiosimulator.edp2.models:MeasuringPointRepository>

@@ -9,8 +9,8 @@
         <operationSignature__EntryLevelSystemCall href="default.repository#_KjhikgzkEeCFg86gxKwVPw"/>
       </actions_ScenarioBehaviour>
     </scenarioBehaviour_UsageScenario>
-    <workload_UsageScenario xsi:type="usagemodel:ClosedWorkload" population="5">
-      <thinkTime_ClosedWorkload specification="1.0"/>
+    <workload_UsageScenario xsi:type="usagemodel:OpenWorkload">
+      <interArrivalTime_OpenWorkload specification="3.0"/>
     </workload_UsageScenario>
   </usageScenario_UsageModel>
 </usagemodel:UsageModel>

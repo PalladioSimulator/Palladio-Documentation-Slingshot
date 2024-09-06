@@ -1,10 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resourceenvironment:ResourceEnvironment xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:resourceenvironment="http://palladiosimulator.org/PalladioComponentModel/ResourceEnvironment/5.2">
+  <linkingResources__ResourceEnvironment id="_jW8l4LwZEe6i2ICnm9lfkw" entityName="LinkingResource1" connectedResourceContainers_LinkingResource="_GAeeUCpXEeKNWc2UWjbmuw _R8hGoLwqEe6VP9cIU1FUYw">
+    <communicationLinkResourceSpecifications_LinkingResource id="_jW-bELwZEe6i2ICnm9lfkw">
+      <communicationLinkResourceType_CommunicationLinkResourceSpecification href="pathmap://PCM_MODELS/Palladio.resourcetype#_o3sScH2AEdyH8uerKnHYug"/>
+      <latency_CommunicationLinkResourceSpecification specification="0.0"/>
+      <throughput_CommunicationLinkResourceSpecification specification="10000"/>
+    </communicationLinkResourceSpecifications_LinkingResource>
+  </linkingResources__ResourceEnvironment>
   <resourceContainer_ResourceEnvironment id="_GAeeUCpXEeKNWc2UWjbmuw" entityName="AppServer">
     <activeResourceSpecifications_ResourceContainer id="_KFRwgCpXEeKNWc2UWjbmuw">
       <schedulingPolicy href="pathmap://PCM_MODELS/Palladio.resourcetype#FCFS"/>
       <activeResourceType_ActiveResourceSpecification href="pathmap://PCM_MODELS/Palladio.resourcetype#_oro4gG3fEdy4YaaT-RYrLQ"/>
-      <processingRate_ProcessingResourceSpecification specification="1.0810638521955225"/>
+      <processingRate_ProcessingResourceSpecification specification="1.0"/>
+    </activeResourceSpecifications_ResourceContainer>
+  </resourceContainer_ResourceEnvironment>
+  <resourceContainer_ResourceEnvironment id="_R8hGoLwqEe6VP9cIU1FUYw" entityName="Loadbalancer_RC">
+    <activeResourceSpecifications_ResourceContainer id="_TcRpMLwqEe6VP9cIU1FUYw">
+      <schedulingPolicy href="pathmap://PCM_MODELS/Palladio.resourcetype#FCFS"/>
+      <activeResourceType_ActiveResourceSpecification href="pathmap://PCM_MODELS/Palladio.resourcetype#_oro4gG3fEdy4YaaT-RYrLQ"/>
+      <processingRate_ProcessingResourceSpecification specification="100000"/>
     </activeResourceSpecifications_ResourceContainer>
   </resourceContainer_ResourceEnvironment>
 </resourceenvironment:ResourceEnvironment>

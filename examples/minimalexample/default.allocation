@@ -6,4 +6,8 @@
     <resourceContainer_AllocationContext href="My.resourceenvironment#_GAeeUCpXEeKNWc2UWjbmuw"/>
     <assemblyContext_AllocationContext href="default.system#_9c3KwCHcEd6lJo4DCALHMw"/>
   </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_8NrjALwmEe6cUu5aSZDYJA" entityName="Allocation_Loadbalancer">
+    <resourceContainer_AllocationContext href="My.resourceenvironment#_R8hGoLwqEe6VP9cIU1FUYw"/>
+    <assemblyContext_AllocationContext href="default.system#_zHLRgLwmEe6cUu5aSZDYJA"/>
+  </allocationContexts_Allocation>
 </allocation:Allocation>
