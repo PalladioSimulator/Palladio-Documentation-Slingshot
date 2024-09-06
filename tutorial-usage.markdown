@@ -91,7 +91,7 @@ For further information on SPD, confer (TODO : insert section link)
 + Use the tree editor to populate the model instance (If you don't know how to use the tree editor, read up on some Ecore / EMF basics)
   - Add an *Elastic Infrastructure* to the SPD instance to target a Resource Environment in the scaling rules (*rightclick on SPD node* -> *New Child -> Elastic Infrastructure*)
     - Add a reference to the resource environment model into the SPD instance (*rightclick* -> *Load Resource* or drag-and-drop)
-    - In the properties view : Set the EI's resource environment 
+    - In the properties view : Set the EI's property `Unit` the the targeted resource container. Afterwards the value for property `PCM Resource Environment` is set automatically.  
   - Add a *Scaling Policy* to the SPD instance (*rightclick on SPD node* -> *New Child -> Scaling Policy*)
     - In the properties view : Set the policy's target group to newly added EI, and the policy to *active* (orange boxes)
       <img src="../images/tutorial/palladio-tutorial-spd-properties.png" alt="palladio-tutorial-spd" width="700px" />
