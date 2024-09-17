@@ -50,4 +50,4 @@ public class SimulationBehavior implements SimulationBehaviorExtension {
 In this case, your class of subscribers should implement the `SystemBehaviorExtension`.
 
 ## Model Contribution
-See more at [UI and Workflow](Palladio-Documentation-Slingshot/slingshot-simulator/system-driver/ui/)
+See more at [UI and Workflow]({{"slingshot-simulator/system-driver/ui/" | relative_url}})

@@ -9,7 +9,7 @@ nav_order: 3
 
 This tutorial explains how to use the Slingshot Simulator. 
 It focuses on a the perspective of the analyst.
-If you are interested in contributing or extending Slingshot, go to the [Developer Tutorial](/tutorial-dev/).
+If you are interested in contributing or extending Slingshot, go to the [Developer Tutorial]({{"tutorial-dev" | relative_url}}).
 
 This Tutorial assumes a basic understanding of Eclipse Modeling Tools and their Usage.
 
@@ -18,7 +18,7 @@ This Tutorial assumes a basic understanding of Eclipse Modeling Tools and their 
 TODO : installation instructions, once an installable unit exist.
 
 There is not yet a "ready-to-use" Slingshot Drop, the only option is to run Slingshot in an development environment. 
-Please follow the [Developer Tutorial](/tutorial-dev/) to achieve this. 
+Please follow the [Developer Tutorial]({{"tutorial-dev" | relative_url}}) to achieve this. 
 
 ## Create PCM Models
 
